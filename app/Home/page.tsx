@@ -4,6 +4,7 @@ import ProfileImage from '../../app/assent/images/onurcan-gonul.png'
 import { Button } from '@/components/ui/button'
 import { ArrowDownToLine } from 'lucide-react'
 import About from '@/components/About'
+import MyProject from '@/components/MyProjects'
 
 const Home = () => {
   return (
@@ -48,6 +49,7 @@ const Home = () => {
               download="Onurcan-Gonul-Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
+              className="duration-300 hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.35)] dark:hover:shadow-[6px_6px_0px_0px_rgba(255,255,255,0.2)]"
             >
               <ArrowDownToLine className="mr-2 h-4 w-4" />
               Download My Resume
@@ -59,6 +61,7 @@ const Home = () => {
       </div>
     </section>
     <About/>
+    <MyProject/>
     </>
     
   )
