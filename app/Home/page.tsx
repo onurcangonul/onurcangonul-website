@@ -1,0 +1,67 @@
+import React from 'react'
+import Image from 'next/image'
+import ProfileImage from '../../app/assent/images/onurcan-gonul.png'
+import { Button } from '@/components/ui/button'
+import { ArrowDownToLine } from 'lucide-react'
+import About from '@/components/About'
+
+const Home = () => {
+  return (
+    <>
+    <section className="container mx-auto px-4 py-8 md:py-16 flex flex-col items-center gap-8">
+      {/* Smaller Profile Image */}
+      <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-3 border-primary">
+        <Image
+          src={ProfileImage}
+          alt="William Mark"
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 50vw, 30vw"
+          priority
+        />
+      </div>
+
+      {/* Centered Text Content */}
+      <div className="max-w-md space-y-4 text-center">
+        <div className="space-y-3">
+          <h1 className="text-3xl md:text-4xl font-bold text-primary">
+            Hi! I'm <span className="text-primary">Onurcan Gonul</span>
+          </h1>
+          
+          <div className="flex items-center justify-center gap-3">
+            <div className="h-px w-12 bg-border" />
+            <p className="text-base md:text-lg text-primary font-medium">Frontend Developer</p>
+            <div className="h-px w-12 bg-border" />
+          </div>
+        </div>
+
+        <div className="space-y-4">
+          <p className="text-base text-primary/90 leading-relaxed">
+          Frontend developer with 3+ years of React and React Native experience, currently based in Istanbul, Turkey.
+          </p>
+        </div>
+        <div>
+        <div>
+          <Button asChild>
+            <a 
+              href="/docs/resume.pdf" 
+              download="Onurcan-Gonul-Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ArrowDownToLine className="mr-2 h-4 w-4" />
+              Download My Resume
+            </a>
+          </Button>
+        </div>
+
+        </div>
+      </div>
+    </section>
+    <About/>
+    </>
+    
+  )
+}
+
+export default Home
