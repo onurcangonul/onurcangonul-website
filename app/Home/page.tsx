@@ -5,6 +5,9 @@ import { Button } from '@/components/ui/button'
 import { ArrowDownToLine } from 'lucide-react'
 import About from '@/components/About'
 import MyProject from '@/components/MyProjects'
+import MyExperience from '@/components/MyExperience'
+import PersonalAppProject from '@/components/MyProjects/PersonalAppProject'
+import { informationText } from '@/data/information/informationData' 
 
 const Home = () => {
   return (
@@ -14,7 +17,7 @@ const Home = () => {
       <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-3 border-primary">
         <Image
           src={ProfileImage}
-          alt="William Mark"
+          alt="profile-photo"
           fill
           className="object-cover"
           sizes="(max-width: 768px) 50vw, 30vw"
@@ -26,19 +29,19 @@ const Home = () => {
       <div className="max-w-md space-y-4 text-center">
         <div className="space-y-3">
           <h1 className="text-3xl md:text-4xl font-bold text-primary">
-            Hi! I'm <span className="text-primary">Onurcan Gonul</span>
+            Hi! I'm <span className="text-primary">{informationText.fullName ?? ""}</span>
           </h1>
           
           <div className="flex items-center justify-center gap-3">
             <div className="h-px w-12 bg-border" />
-            <p className="text-base md:text-lg text-primary font-medium">Frontend Developer</p>
+            <p className="text-base md:text-lg text-primary font-medium">{informationText.jobTitle ?? ""}</p>
             <div className="h-px w-12 bg-border" />
           </div>
         </div>
 
         <div className="space-y-4">
           <p className="text-base text-primary/90 leading-relaxed">
-          Frontend developer with 3+ years of React and React Native experience, currently based in Istanbul, Turkey.
+          {informationText.description ?? ""}
           </p>
         </div>
         <div>
@@ -62,6 +65,8 @@ const Home = () => {
     </section>
     <About/>
     <MyProject/>
+    <PersonalAppProject/>
+    <MyExperience/>
     </>
     
   )
