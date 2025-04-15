@@ -29,7 +29,7 @@ const Home = () => {
       <div className="max-w-md space-y-4 text-center">
         <div className="space-y-3">
           <h1 className="text-3xl md:text-4xl font-bold text-primary">
-            Hi! I'm <span className="text-primary">{informationText.fullName ?? ""}</span>
+          Hi! I&apos;m <span>{informationText.fullName}</span>
           </h1>
           
           <div className="flex items-center justify-center gap-3">

@@ -40,7 +40,7 @@ const PersonalAppProject = () => {
           <p className="text-muted-foreground leading-relaxed">
             Togeth App is a completely free application designed to enhance one
             of the most crucial steps in learning English: building your
-            vocabulary. By leveraging word data sourced from the world's leading
+            vocabulary. By leveraging word data sourced from the world&apos;s leading
             dictionaries and resources, Togeth provides you with the tools to
             expand your vocabulary effectively. 
           </p>
