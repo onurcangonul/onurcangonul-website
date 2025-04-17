@@ -19,7 +19,7 @@ export function ContactSheet({ children }: { children: React.ReactNode }) {
       <SheetTrigger asChild>{children}</SheetTrigger>
       <SheetContent>
         <SheetHeader>
-          <SheetTitle>Let's Contact</SheetTitle>
+          <SheetTitle>Contact</SheetTitle>
           <SheetDescription>
             You can contact me via LinkedIn or reach out directly through email.
           </SheetDescription>
