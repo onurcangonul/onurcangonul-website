@@ -3,17 +3,16 @@
 import * as React from "react"
 import { ThemeProvider as NextThemesProvider } from "next-themes"
 
-interface ThemeProviderProps extends React.ComponentProps<typeof NextThemesProvider> {}
-
 export function ThemeProvider({
   children,
   attribute = "class",
   defaultTheme = "light",
   enableSystem = true,
   ...props
-}: ThemeProviderProps) {
+}: React.ComponentProps<typeof NextThemesProvider>) {
   const [mounted, setMounted] = React.useState(false)
 
+  // Prevent SSR mismatch by delaying rendering until client-side
   React.useEffect(() => {
     setMounted(true)
   }, [])
