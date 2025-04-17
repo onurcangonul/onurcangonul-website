@@ -8,7 +8,9 @@ import {
   SiTailwindcss,
   SiShadcnui,
   SiMui,
+  SiFigma
 } from "react-icons/si";
+
 import { DiNodejs } from "react-icons/di";
 import { ReactNode } from "react";
 
@@ -52,4 +54,7 @@ export const techIcons: ReactNode[] = [
   <SiShadcnui size={24} key="shadcn" />,
   <SiMui size={24} key="mui" />,
   <FaGithub size={24} key="github" />,
+  <SiFigma size={24} key="figma" />,
+
+  
 ];

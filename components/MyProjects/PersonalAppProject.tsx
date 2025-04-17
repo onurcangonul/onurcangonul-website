@@ -25,17 +25,17 @@ const images = [
 
 const PersonalAppProject = () => {
   return (
-    <section className="container mx-auto px-4 py-20">
+    <section id="myApp" className="container mx-auto px-4 my-10">
       {/* Başlıklar */}
       <h3 className="text-center text-sm text-muted-foreground mb-2">Togeth</h3>
-      <h2 className="text-3xl font-bold text-primary text-center mb-16">
+      <h2 className="text-3xl font-bold text-primary text-center mb-8">
         My App
       </h2>
 
       {/* İçerik */}
-      <div className="flex flex-col-reverse md:flex-row items-center gap-16">
+      <div className="flex flex-col-reverse md:flex-row items-center gap- md:ml-10 ">
         {/* Sol Yazı Alanı */}
-        <div className="md:w-1/2 w-full text-left space-y-6">
+        <div className="md:w-1/2 w-full text-left space-y-6 md:mt-0 mt-8">
           <h3 className="text-2xl font-semibold text-primary">Togeth App</h3>
           <p className="text-muted-foreground leading-relaxed">
             Togeth App is a completely free application designed to enhance one

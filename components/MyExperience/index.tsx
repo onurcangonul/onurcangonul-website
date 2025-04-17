@@ -34,17 +34,14 @@ const experiences = [
 
 const MyExperience = () => {
   return (
-    <section className="py-20">
+    <section id="myExperience" className="py-10">
       <div className="container mx-auto px-4">
-        {/* Başlıklar */}
         <h3 className="text-center text-sm text-muted-foreground mb-2">
           Career
         </h3>
         <h2 className="text-3xl font-bold text-primary text-center mb-16">
-          My Experience
+        Experience
         </h2>
-
-        {/* Ortadaki çizgi */}
         <div className="relative">
           <div className="absolute left-1/2 top-0 w-0.5 h-full bg-gray-200 dark:bg-gray-700 -translate-x-1/2 z-0" />
 
