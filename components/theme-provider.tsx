@@ -3,9 +3,33 @@
 import * as React from "react"
 import { ThemeProvider as NextThemesProvider } from "next-themes"
 
+interface ThemeProviderProps extends React.ComponentProps<typeof NextThemesProvider> {}
+
 export function ThemeProvider({
   children,
+  attribute = "class",
+  defaultTheme = "light",
+  enableSystem = true,
   ...props
-}: React.ComponentProps<typeof NextThemesProvider>) {
-  return <NextThemesProvider {...props}>{children}</NextThemesProvider>
+}: ThemeProviderProps) {
+  const [mounted, setMounted] = React.useState(false)
+
+  React.useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return <>{children}</>
+  }
+
+  return (
+    <NextThemesProvider
+      attribute={attribute}
+      defaultTheme={defaultTheme}
+      enableSystem={enableSystem}
+      {...props}
+    >
+      {children}
+    </NextThemesProvider>
+  )
 }
