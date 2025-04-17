@@ -12,7 +12,6 @@ export function ThemeProvider({
 }: React.ComponentProps<typeof NextThemesProvider>) {
   const [mounted, setMounted] = React.useState(false)
 
-  // Prevent SSR mismatch by delaying rendering until client-side
   React.useEffect(() => {
     setMounted(true)
   }, [])
