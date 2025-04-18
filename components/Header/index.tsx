@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import { ThemeModeToggle } from "../ThemeModeToggle";
 import { FaReact } from "react-icons/fa";
@@ -9,7 +8,6 @@ import { ContactSheet } from "../ContactSheet";
 const Header: React.FC = () => {
   return (
     <header className="w-full flex flex-wrap items-center justify-between md:justify-around px-4 md:px-8 py-4">
-      {/* Logo/Icon linking to home */}
       <Link href="/">
         <span className="text-xl font-medium flex items-center gap-2 cursor-pointer">
           <FaReact className="animate-slow-spin text-primary" size={32} />

@@ -1,4 +1,3 @@
-import React from 'react'
 import Image from 'next/image'
 import ProfileImage from '../../app/assent/images/onurcan-gonul.png'
 import { Button } from '@/components/ui/button'
@@ -8,7 +7,6 @@ import { informationText } from '@/data/information/informationData'
 const Introduction = () => {
   return (
     <>
-    
     <section className="container mx-auto px-4 py-8 md:py-16 flex flex-col items-center gap-8">
       <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-3 border-primary">
         <Image
@@ -50,11 +48,10 @@ const Introduction = () => {
               className="duration-300 hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.35)] dark:hover:shadow-[6px_6px_0px_0px_rgba(255,255,255,0.2)]"
             >
               <ArrowDownToLine className="mr-2 h-4 w-4" />
-              Download My Resume
+              Download Resume
             </a>
           </Button>
         </div>
-
         </div>
       </div>
     </section>

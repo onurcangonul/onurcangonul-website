@@ -1,12 +1,19 @@
+'use client'
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
-import { myProjectsData } from "@/data/myProjects/myProjectsData";
+  type CarouselApi,
+} from "@/components/ui/carousel"
+import { myProjectsData } from "@/data/myProjects/myProjectsData"
+import { useState } from "react"
+import { CarouselDots } from "../ui/corouselDots"
+
 export default function MyProjects() {
+  const [api, setApi] = useState<CarouselApi>()
+
   return (
     <section id="myProjects" className="container mx-auto px-4 py-10">
       <h3 className="text-center text-sm text-gray-500 dark:text-gray-400 mb-2">
@@ -16,31 +23,33 @@ export default function MyProjects() {
         My Projects
       </h2>
 
-      <Carousel>
+      <Carousel setApi={setApi}>
         <CarouselContent>
           {myProjectsData.map((service, i) => (
             <CarouselItem
               key={i}
               className="basis-full sm:basis-1/2 md:basis-1/3"
             >
-              <div className="group relative border rounded-xl p-6 h-[260px] flex flex-col justify-start transition-all duration-300 hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_rgba(0,0,0,0.75)] dark:hover:shadow-[6px_6px_0px_rgba(255,255,255,0.2)]">
+              <div className="group relative border rounded-xl p-6 md:h-[260px] h-[290px] flex flex-col justify-start transition-all">
                 <div className="mb-4">{service.icon}</div>
                 <h4 className="font-semibold text-lg text-primary mb-2">
-                  {service.title??""}
+                  {service.title ?? ""}
                 </h4>
                 <p className="text-sm text-muted-foreground line-clamp-[7]">
-                  {service.description??""}
+                  {service.description ?? ""}
                 </p>
                 <p className="text-xs font-medium text-muted-foreground line-clamp-[7] mt-3 underline">
-                  {service.company??""}
+                  {service.company ?? ""}
                 </p>
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+
+        <CarouselPrevious className="md:flex hidden" />
+        <CarouselNext className="md:flex hidden" />
+        <CarouselDots api={api} />
       </Carousel>
     </section>
-  );
+  )
 }

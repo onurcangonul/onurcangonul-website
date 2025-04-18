@@ -1,4 +1,3 @@
-// components/ContactSheet.tsx
 import {
   Sheet,
   SheetContent,
@@ -12,7 +11,8 @@ import { Button } from "../ui/button";
 import { ArrowDownToLine } from "lucide-react";
 import { IoMailOutline } from "react-icons/io5";
 import { CiLinkedin } from "react-icons/ci";
-
+import Link from "next/link";
+import { informationText } from "@/data/information/informationData";
 export function ContactSheet({ children }: { children: React.ReactNode }) {
   return (
     <Sheet>
@@ -26,21 +26,21 @@ export function ContactSheet({ children }: { children: React.ReactNode }) {
         </SheetHeader>
 
         <div className="flex justify-center gap-6 ">
-          <a href="https://www.linkedin.com/in/onurcangonul/" target="_blank">
+          <Link href={`${informationText.linkedin ?? ""}`} target="_blank">
             <Card className="p-4 rounded-md hover:bg-muted cursor-pointer transition-all duration-300 hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_rgba(0,0,0,0.75)] dark:hover:shadow-[6px_6px_0px_rgba(255,255,255,0.2)]">
               <CardContent className="flex items-center justify-center">
                 <CiLinkedin size={32} className="text-primary" />
               </CardContent>
             </Card>
-          </a>
+          </Link>
 
-          <a href="mailto:onurcangonul@gmail.com">
+          <Link href={`mailto:${informationText.email ?? ""}`}>
             <Card className="p-4 rounded-md hover:bg-muted cursor-pointer transition-all duration-300 hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_rgba(0,0,0,0.75)] dark:hover:shadow-[6px_6px_0px_rgba(255,255,255,0.2)]">
               <CardContent className="flex items-center justify-center">
                 <IoMailOutline size={32} className="text-primary" />
               </CardContent>
             </Card>
-          </a>
+          </Link>
         </div>
         <div className="flex items-center justify-center gap-3">
           <div className="h-px w-12 bg-border" />
@@ -49,8 +49,8 @@ export function ContactSheet({ children }: { children: React.ReactNode }) {
         </div>
         <div className="flex items-center justify-center gap-3">
           <Button asChild>
-            <a 
-              href="/docs/resume.pdf" 
+            <a
+              href="/docs/resume.pdf"
               download="Onurcan-Gonul-Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"

@@ -31,11 +31,11 @@ const About = () => {
                     className="group border  transition-all duration-300 hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_rgba(0,0,0,0.75)] dark:hover:shadow-[6px_6px_0px_rgba(255,255,255,0.2)]"
                   >
                     <CardContent className="p-5">
-                      {item.icon}
+                      {item.icon??""}
                       <h4 className="font-semibold text-primary mb-2">
-                        {item.title}
+                        {item.title??""}
                       </h4>
-                      <p className="text-sm text-primary">{item.description}</p>
+                      <p className="text-sm text-primary">{item.description??""}</p>
                     </CardContent>
                   </Card>
                 ))}
@@ -45,7 +45,7 @@ const About = () => {
                 <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-3">
                   Technologies I use
                 </h4>
-                <div className="flex flex-wrap gap-4">
+                <div className="flex flex-wrap gap-3">
                   {techIcons.map((Icon, index) => (
                     <div
                       key={index}

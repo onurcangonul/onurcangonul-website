@@ -1,6 +1,5 @@
 "use client";
-
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaAppStore } from "react-icons/fa";
@@ -9,9 +8,11 @@ import { TfiWorld } from "react-icons/tfi";
 import { Button } from "../ui/button";
 import {
   Carousel,
+  CarouselApi,
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import { CarouselDots } from "../ui/corouselDots";
 
 const images = [
   "/images/carousel-1.webp",
@@ -24,17 +25,16 @@ const images = [
 ];
 
 const PersonalAppProject = () => {
+  const [api, setApi] = useState<CarouselApi>()
+
   return (
     <section id="myApp" className="container mx-auto px-4 my-10">
-      {/* Başlıklar */}
       <h3 className="text-center text-sm text-muted-foreground mb-2">Togeth</h3>
       <h2 className="text-3xl font-bold text-primary text-center mb-8">
         My App
       </h2>
 
-      {/* İçerik */}
       <div className="flex flex-col-reverse md:flex-row items-center gap- md:ml-10 ">
-        {/* Sol Yazı Alanı */}
         <div className="md:w-1/2 w-full text-left space-y-6 md:mt-0 mt-8">
           <h3 className="text-2xl font-semibold text-primary">Togeth App</h3>
           <p className="text-muted-foreground leading-relaxed">
@@ -51,7 +51,6 @@ const PersonalAppProject = () => {
             Additionally, fun features like Word Hunt allow you to reinforce
             your learning through interactive and engaging word discovery games.
           </p>
-          {/* Butonlar */}
           <div className="flex gap-4 mt-4 flex-wrap">
             <Link
               href="https://apps.apple.com/us/app/togeth-app/id6740346065?platform=iphone"
@@ -75,9 +74,9 @@ const PersonalAppProject = () => {
           </div>
         </div>
 
-        {/* Sağ Carousel */}
         <div className="md:w-1/2 w-full">
           <Carousel
+          setApi={setApi}
             opts={{
               align: "center",
               loop: true,
@@ -99,6 +98,8 @@ const PersonalAppProject = () => {
               ))}
             </CarouselContent>
           </Carousel>
+                  <CarouselDots api={api} />
+          
         </div>
       </div>
     </section>
