@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import ProfileImage from '../../app/assent/images/onurcan-gonul.png'
+import ProfileImage from '@/public/images/onurcan-gonul.png'
 import { Button } from '@/components/ui/button'
 import { ArrowDownToLine } from 'lucide-react'
 import { informationText } from '@/data/information/informationData' 

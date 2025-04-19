@@ -3,8 +3,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
   type CarouselApi,
 } from "@/components/ui/carousel"
 import { myProjectsData } from "@/data/myProjects/myProjectsData"
@@ -46,8 +44,6 @@ export default function MyProjects() {
           ))}
         </CarouselContent>
 
-        <CarouselPrevious className="md:flex hidden" />
-        <CarouselNext className="md:flex hidden" />
         <CarouselDots api={api} />
       </Carousel>
     </section>

@@ -32,7 +32,7 @@ export const myExperiences: Experiences[] = [
       company: "Sokak Software House",
       title: "Frontend Developer",
       icon: <FaCode size={20} className="text-primary" />,
-      workYear: "05/2022 - 08/2024",
+      workYear: "05/2023 - 08/2022",
       description:
         "Built and maintained dashboard applications using React.js, Material UI, and SASS, ensuring cross-browser compatibility and mobile responsiveness. Contributed to over 10 projects, including WordPress-based web applications, focusing on UI/UX improvements and frontend optimization. Assisted in agile development processes, improving user accessibility and interaction across platforms.",
       currentyWork: false,
