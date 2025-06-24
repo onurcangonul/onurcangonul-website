@@ -6,21 +6,21 @@ export const myProjectsData = [
     title: "Togeth App (Mobile App)",
     company:"Personel Project",
     description:
-      "Developed and launched a mobile app for English vocabulary learning using React Native, Expo, and animation libraries. Published on the App Store with an interactive and ad-free UI.",
+      "I developed and launched a mobile app for English vocabulary learning using React Native, Expo, and animation libraries, published on the App Store with an interactive and ad-free UI.The app features a word puzzle game, built-in dictionary, and a Pomodoro focus mode. It’s designed to offer an engaging and effective learning experience for users of all ages.",
   },
   {
     icon: <Globe className="text-primary" size={24} />,
     title: "Penti B2B Platform & Admin Dashboard",
     company:"Setsis Setsis Information Technologies",
     description:
-      "Developed a global B2B system for order processing, analytics, and customer management using React.js, Shadcn, and Redux Toolkit.",
+    "Built a B2B platform and admin dashboard for Penti using React.js, Tailwind CSS, and Shadcn, with Redux Toolkit managing the complex state. The platform simplifies order creation and tracking for domestic and international stores, while the admin panel enables efficient, centralized management of stock and orders, improving the overall efficiency of Penti’s global operations."
   },
   {
     icon: <Globe className="text-primary" size={24} />,
     title: "Leecooper B2B Platform & Admin Dashboard",
     company:"Setsis Setsis Information Technologies",
     description:
-      "Built a B2B e-commerce platform for customer management using React.js, Flowbite, and Redux Toolkit. Enhanced UI responsiveness and secure authentication. (Aug 2024 - Dec 2024)",
+      "I developed a B2B e-commerce platform and admin dashboard for Lee Cooper Turkey, focused on customer and order management. Built with React.js, Flowbite, and Redux Toolkit, the platform features enhanced UI responsiveness and secure authentication. It enables dealers to easily place orders, while allowing admins to centrally manage users, products, and transactions.",
   },
   {
     icon: <Globe className="text-primary" size={24} />,
@@ -34,34 +34,34 @@ export const myProjectsData = [
     title: "Kecioren Municipality Inventory App",
     company:"Setsis Setsis Information Technologies",
     description:
-      "Designed and built an inventory tracking system for municipal assets using React.js, Shadcn, and Redux Toolkit. Ensured performance and efficient data handling.",
+    "Kecioren Municipality Inventory App was developed to manage municipal assets efficiently. I contributed to its development using React.js, Shadcn, and Redux Toolkit, focusing on performance and data handling. The platform enables asset tracking, inventory updates, and viewing of stock count reports for streamlined resource management."
   },
   {
     icon: <Globe className="text-primary" size={24} />,
     title: "Fuodix Social Media Platform",
     company:"Setsis Setsis Information Technologies",
-    description: "Designed a corporate social media platform with posts, events, training modules, and exams. Built with React.js, TypeScript, and Redux Toolkit."
+    description: "Fuodix Social Media Platform is an internal corporate network designed to improve communication and information sharing. Employees can share posts, follow announcements, update personal info, and access assigned documents, trainings, and exams. Fully integrated with the Fuodix HR Dashboard, it centralizes HR processes in an interactive structure. Built with React.js, TypeScript, and Redux Toolkit."
   },
   {
     icon: <Globe className="text-primary" size={24} />,
     title: "Fuodix HR Dashboard",
     company:"Setsis Setsis Information Technologies",
     description:
-      "Created an HR management platform for events, training, and evaluations using React.js, Shadcn, and Redux Toolkit.",
+      "Fuodix HR Dashboard is a comprehensive and ongoing project specifically developed for human resources management. It aims to centralize various HR processes such as internal events, trainings, exams, surveys, task tracking, shift planning, leave requests, and more within a single platform. With its user-friendly interface and functional structure, the dashboard is designed to enhance the efficiency and organization of HR departments.",
   },
   {
     icon: <Globe className="text-primary" size={24} />,
-    title: "Transferhub 360 CRM",
+    title: "Transferhub 360",
     company:"Alfa Nova",
     description:
-      "Developed a CRM for transportation with driver assignments, transfers, and dashboards using React.js and Material UI.",
+      "I actively contributed to the development of Transferhub 360 CRM, a transportation management system tailored for medical tourism. The platform enables route-based driver assignments and manages the entire transfer process efficiently. Through the admin dashboard, drivers receive detailed passenger information along with pickup and drop-off locations to ensure a smooth journey. The application was built using React.js, Material UI, and Redux Toolkit",
   },
   {
     icon: <Globe className="text-primary" size={24} />,
     title: "Patienthub360 CRM",
     company:"Alfa Nova",
     description:
-      "Created a CRM for hospitals and clinics covering patient management and scheduling using React.js and Material UI.",
+      "I contributed to the development of Patienthub360 CRM, a healthcare CRM designed for medical tourism, enabling seamless communication between clients, clinics, and doctors. The platform supports patient-doctor follow-ups, test results, online consultations, and more. I worked on both the admin and doctor management panels, helping build a system that streamlines healthcare operations. The application was developed using React.js, Material UI, and Redux Toolkit.",
   },
   {
     icon: <Globe className="text-primary" size={24} />,

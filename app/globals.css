@@ -130,3 +130,11 @@
 html {
   scroll-behavior: smooth;
 }
+
+.custom-scroll {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer */
+}
+.custom-scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}

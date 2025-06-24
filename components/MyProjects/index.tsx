@@ -33,9 +33,10 @@ export default function MyProjects() {
                 <h4 className="font-semibold text-lg text-primary mb-2">
                   {service.title ?? ""}
                 </h4>
-                <p className="text-sm text-muted-foreground line-clamp-[7]">
-                  {service.description ?? ""}
-                </p>
+<p className="text-sm text-muted-foreground line-clamp-[8] overflow-y-auto custom-scroll">
+  {service.description ?? ""}
+</p>
+
                 <p className="text-xs font-medium text-muted-foreground line-clamp-[7] mt-3 underline">
                   {service.company ?? ""}
                 </p>
