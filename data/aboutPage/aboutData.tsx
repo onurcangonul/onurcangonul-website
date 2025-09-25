@@ -21,7 +21,7 @@ export interface AboutItem {
 }
 
 export const aboutText: { text: string } = {
-  text: `As a Frontend Developer with 3+ years of experience, I specialize in building scalable CRM systems, B2B platforms, and admin dashboards using React.js and Next.js. My expertise includes state management with Redux Toolkit and crafting responsive UIs with Tailwind CSS and Shadcn. I expanded my skills to mobile development by creating Togeth App, an English learning platform with React Native. Passionate about performance optimization and clean code, I thrive in agile environments where I can implement cutting-edge solutions to complex problems.`,
+  text: `As a Frontend Developer with 4+ years of experience, I specialize in building scalable CRM systems, B2B platforms, and admin dashboards using React.js and Next.js. My expertise includes state management with Redux Toolkit and crafting responsive UIs with Tailwind CSS and Shadcn. I expanded my skills to mobile development by creating Togeth App, an English learning platform with React Native. Passionate about performance optimization and clean code, I thrive in agile environments where I can implement cutting-edge solutions to complex problems.`,
 };
 
 export const aboutMeItems: AboutItem[] = [

@@ -11,7 +11,7 @@ export interface InformationText {
 export const informationText: InformationText = {
   fullName: "Onurcan Gonul",
   jobTitle: "Frontend Developer",
-  description: "Frontend developer with 3+ years of React and React Native experience, currently based in Istanbul, Turkey.",
+  description: "Frontend developer with 4+ years of React and React Native experience, currently based in Istanbul, Turkey.",
   email: "onurcangonul@gmail.com",
   linkedin:"https://www.linkedin.com/in/onurcangonul",
   github:"https://github.com/onurcangonul"
